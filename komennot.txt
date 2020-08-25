@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m jotain
+git remote add origin https://github.com/Tommi62/digimedia.git
+git push -u origin master
+- jatkossa git push riittää
