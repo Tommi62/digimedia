@@ -1,0 +1,61 @@
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar{
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.navbar-brand{
+  font-family: 'Kalam', cursive;
+  font-size: 25px;
+}
+
+.col-sm-6{
+  text-align: center;
+  padding: 3rem 3rem 1rem 3rem;
+  background-color: #c9c9c9;
+  border: 4px solid white;
+}
+
+main{
+  padding-top: 17px!important;
+  padding-bottom: 17px!important;
+}
+
+.row{
+  margin: 0!important;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.align-items-center{
+  padding-top: 4rem;
+}
+
+.btn-outline-success{
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-success:hover{
+  color: #343140;
+  background-color: #ffffff;
+}
+
+.rounded{
+  border-radius: 1rem!important;
+}
