@@ -4,47 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto&family=Sansita+Swashed&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><ion-icon name="home-outline" size="large"></ion-icon></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Koti<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Toni
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#deck1">Vektori</a>
-                        <a class="dropdown-item" href="#deck1">Videoeditoinnin perusteet</a>
-                        <a class="dropdown-item" href="#deck2">Videosprintti</a>
-                        <a class="dropdown-item" href="#deck2">Promovideo</a>
+                        <a class="dropdown-item" href="#welcome">Vektori</a>
+                        <a class="dropdown-item" href="#welcome">Videoeditoinnin perusteet</a>
+                        <a class="dropdown-item" href="#welcome">Videosprintti</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Ile
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="#deck3">jQuery-tehtävät 1-3</a>
-                        <a class="dropdown-item" href="#deck3">jQuery-tehtävä 4</a>
-                        <a class="dropdown-item" href="#deck3">jQuery-tehtävä 5</a>
-                        <a class="dropdown-item" href="#deck4">Bootstrap-tehtävä</a>
-                        <a class="dropdown-item" href="#deck4">Bootstrap-tehtävä 2</a>
+                        <a class="dropdown-item" href="#Ile">jQuery-tehtävät 1-3</a>
+                        <a class="dropdown-item" href="#Ile">jQuery-tehtävä 4</a>
+                        <a class="dropdown-item" href="#Ile">jQuery-tehtävä 5</a>
+                        <a class="dropdown-item" href="#deck3">jQuery + AJAX</a>
+                        <a class="dropdown-item" href="#deck3">Bootstrap-tehtävä</a>
+                        <a class="dropdown-item" href="#deck3">Bootstrap-tehtävä 2</a>
+                        <a class="dropdown-item" href="#deck4">Bootstrap kustomointi</a>
                         <a class="dropdown-item" href="#deck4">After Effects perusteet</a>
-                        <a class="dropdown-item" href="#deck5">Moniraitamiksaus</a>
+                        <a class="dropdown-item" href="#deck4">Moniraitamiksaus</a>
                         <a class="dropdown-item" href="#deck5">Mikrofonitutkielma</a>
                         <a class="dropdown-item" href="#deck5">Wordpress-tehtävä</a>
                     </div>
@@ -53,18 +54,18 @@
         </div>
     </nav>
 
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark" style="background-image: url('images/Banner4.jpg');">
+    <div class="jumbotron-fluid p-4 p-md-5 text-white bg-dark" style="background-image: url('images/Banner4.jpg');">
         <div class="col-md-6 px-0">
-            <h1 class="display-4 font-italic">Tommin portfolio</h1>
+            <h1 class="display-4">Tommin portfolio</h1>
             <p class="lead my-3">Tämä sivu sisältää Metropolian mediatekniikan opiskelijan Tommi Vainion (1909832)
                 Digitaalisen median perusteet -kurssilla tekemät tehtävät.
                 Tehtävät ovat jaettu sen mukaan kuka opettaja ne on antanut.</p>
-            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Tervetuloa!</a></p>
+            <p id="welcome" class="lead mb-0 text-white font-weight-bold">Tervetuloa!</p>
         </div>
     </div>
 
-    <main class="row">
-        <section class="col">
+    <section class="row exercises">
+        <article class="col">
             <header class="row text-center">
                 <div class="col">
                     <br><br><br>
@@ -75,7 +76,9 @@
 
             <div id="deck1" class="card-deck">
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal1"><img src="images/Aku.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal1"><img
+                            src="images/Aku.jpg" class="card-img-top"
+                            alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Vektori</h2>
                         <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -97,21 +100,67 @@
                     </div>
                 </div>
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal2"><img src="images/Video1.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal2"><img
+                            src="images/Video1.jpg"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Videoeditoinnin perusteet</h2>
-                        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade" id="Modal2" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel"
                              aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel2">Videoeditoinnin perusteet</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                    <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe id="video1" class="embed-responsive-item" src="" allow="autoplay"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                data-dismiss="modal">Close
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal3"><img
+                            src="images/sprintti.jpg"
+                            class="card-img-top" alt="..."></a></div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Videosprintti</h2>
+                        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
                                     <div class="modal-body">
-
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe id="video2" class="embed-responsive-item" src="" allow="autoplay"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                        <article id="info">
+                                            <p>
+                                                Pahoittelut silmälaseista heijastuvasta kuvausvalosta. Osa kuvauksissa
+                                                käyttämästäni kalustosta
+                                                oli lainassa kaveriltani ja minulla oli mahdollisuus käyttää niitä vain
+                                                yhden iltapäivän aikana.
+                                                Valitettavasti huomasin tämän mokan vasta jälkikäteen eikä kaverilla
+                                                ollut mahdollisuutta tulla
+                                                uudestaan lainaamaan kalustoa ja auttamaan kuvauksissa tämän aikarajan
+                                                puitteissa, joten tällä materiaalilla
+                                                oli pärjättävä. Tarkistin kyllä etukäteen, ettei pitäisi heijastaa,
+                                                mutta ilmeisesti oma tai kameran asento oli
+                                                muuttunut testioton jälkeen.
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                data-dismiss="modal">Close
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -120,59 +169,10 @@
                 </div>
             </div>
             <br>
-            <div id="deck2" class="card-deck">
-                <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal3"><img src="https://via.placeholder.com/600x338"
-                                                                              class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Videosprintti</h2>
-                        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel3">Videosprintti</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal4"><img src="https://via.placeholder.com/600x338"
-                                                                              class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Promovideo</h2>
-                        <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel4">Promovideo</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <main class="row">
-        <section class="col">
+        </article>
+    </section>
+    <section class="row exercises">
+        <article class="col">
             <header class="row text-center">
                 <div class="col">
                     <br><br><br>
@@ -183,141 +183,121 @@
 
             <div id="deck3" class="card-deck">
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal5"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/jqbasiclab1.html"><img
+                            src="images/jQuery1-3.png"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">jQuery-tehtävät 1-3</h2>
-                        <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel5">jQuery-tehtävät 1-3</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal6"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap">
+                        <a href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/ex4/ex4.html"><img
+                                src="images/jQuery4.png"
+                                class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">jQuery-tehtävä 4</h2>
-                        <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel6">jQuery-tehtävä 4</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal7"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/animate.html#fpage"><img
+                            src="images/jqueryanim.png"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">jQuery-tehtävä 5</h2>
-                        <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel7">jQuery-tehtävä 5</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <br>
             <div id="deck4" class="card-deck">
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal8"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/teht5.html"><img
+                            src="images/jQuery5.png"
+                            class="card-img-top" alt="..."></a></div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">jQuery + AJAX</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/bootstrap.html"><img
+                            src="images/Bootstrap1.jpg"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Bootstrap-tehtävä</h2>
-                        <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel8">Bootstrap-tehtävä </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal9"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/bootstrap2.html"><img
+                            src="images/Bootstrap2.png"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Bootstrap-tehtävä 2</h2>
-                        <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel9">Bootstrap-tehtävä 2</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="deck5" class="card-deck">
+                <div class="card">
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/Bootstrap/bootstrap.html"><img
+                            src="images/Bootstrap3.png"
+                            class="card-img-top" alt="..."></a></div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Bootstrap kustomointi</h2>
                     </div>
                 </div>
                 <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal10"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal10"><img
+                            src="images/afterEffects.jpg"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">After Effects perusteet</h2>
                         <div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="exampleModalLabel"
                              aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                            <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel10">After Effects perusteet</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                    <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe id="video3" class="embed-responsive-item" src="" allow="autoplay"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                data-dismiss="modal">Close
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal11"><img
+                            src="images/moniraita.jpg"
+                            class="card-img-top"
+                            alt="..."></a></div>
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Moniraitamiksaus</h2>
+                        <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
                                     <div class="modal-body">
-
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe id="video4" class="embed-responsive-item" src="" allow="autoplay"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                                                data-dismiss="modal">Close
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -325,34 +305,12 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <div id="deck5" class="card-deck">
-                <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal11"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Moniraitamiksaus</h2>
-                        <div class="modal fade" id="Modal11" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel11">Moniraitamiksaus</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal12"><img src="https://via.placeholder.com/400x225"
-                                                                              class="card-img-top" alt="..."></a>
+            <div class="card-deck">
+                <div class="card last">
+                    <div class="card-img-wrap"><a href="" data-toggle="modal" data-target="#Modal12"><img
+                            src="images/mikrofoni.jpg"
+                            class="card-img-top"
+                            alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Mikrofonitutkielma</h2>
                         <div class="modal fade" id="Modal12" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -360,53 +318,118 @@
                             <div class="modal-dialog modal-xl modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel12">Mikrofonitutkielma</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel13">Mikrofonitutkielma</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
+                                        <header class="row text-center">
+                                            <div class="col">
+                                                <h2>Mikrofonitutkielma</h2><br>
+                                            </div>
+                                        </header>
+                                        <article class="col">
+                                            <p><b>1.</b> Koska kamerasta löytyy tässä tapauksessa +48V ominaisuus
+                                                voidaan käyttää
+                                                kondensaattorimikrofonia sillä siihen tarvittava virta saadaan
+                                                kamerasta.
+                                                Tässä halutaan suuntaava mikrofoni videokuvauskäyttöön, joten
+                                                kondensaattorimikrofoni on tähän tarpeeseen paras valinta, koska sillä
+                                                saadaan sen herkkyyden ansiosta kauempaakin tulevat äänet talteen ja
+                                                videokuvauksessa yleensä näin halutaan. Ja koska mikrofonin halutaan
+                                                olevan
+                                                suuntaava, haulikkomikrofoni on loistava valinta sillä sen avulla
+                                                saadaan
+                                                tarkasti edestä tulevat äänet talteen. Suuntakuvioksi sopisivat myös
+                                                hertta
+                                                ja superhertta, jos halutaan tehokkaasti äänet hieman laajemmalta
+                                                alueelta
+                                                edestä talteen. Näiden tietojen pohjalta suosittelisin <a
+                                                        href="https://www.digitarvike.fi/product/3282/rode-ntg-2-haulikkomikrofoni-xlr">Rode
+                                                    Ntg-2
+                                                    -haulikkomikrofonia</a>, hinta 229€.</p>
 
+                                            <p><b>2.</b> Puhe- ja karaokekäyttöön tarvittavaa mikrofonia pidetään koko
+                                                ajan suun
+                                                lähellä, joten dynaaminen mikrofoni on tähän tarkoitukseen sopiva
+                                                valinta
+                                                sillä kauempaa tulevia ääniä ei tarvitse eikä tässä tapauksessa ole
+                                                suotavaakaan ottaa talteen. Dynaaminen mikrofoni on epäherkempi kuin
+                                                kondensaattorimikrofoni, joten se ei nappaa ylimääräistä taustahälinää
+                                                mukaan. Lisäksi dynaaminen mikrofoni ei ole esityskäytössä herkkä
+                                                kierrolle
+                                                toisin kuin kondensaattorimikrofoni. Dynaamisen mikrofonin etu on myös
+                                                se,
+                                                että se kestää paremmin iskuja, joita se voi saada esimerkiksi
+                                                karaokekäytössä. Suuntakuvioksi tähän tapaukseen sopisi hertta sillä se
+                                                ottaa tehokkaasti edestä ja sivusta tulevat äänet talteen ja puhe- sekä
+                                                karaokekäytössä mikrofoni on suunnattu suuta kohti, jolloin
+                                                herttakuviolla
+                                                vain olennainen ääni napataan. Nämä seikat huomioon ottaen <a
+                                                        href="https://www.verkkokauppa.com/fi/product/64744/mcqnd/Sennheiser-XSW-D-Vocal-Set-langaton-mikrofonijarjestelma?list=OZCYkR513SsMBR1tiVFbI5YD5I5Yx5c5YvfK51VBWitT5ghmpCk5cPvI5zvOc5zAdz1">Sennheiser
+                                                    XSW-D
+                                                    Vocal Set -langaton mikrofonijärjestelmä</a>, hinta 281,90€, voisi
+                                                olla
+                                                sopiva
+                                                valinta.
+                                            </p>
+
+                                            <p><b>3.</b> Tähän tarkoitukseen kondensaattorimikrofoni on taas paras
+                                                vaihtoehto,
+                                                koska sillä saadaan kauempanakin istuvien äänet välitettyä eikä ihmisten
+                                                tarvitse kumartua mikrofonin ääreen joka kerta kun he ovat aikeissa
+                                                puhua.
+                                                Mikrofonin ei myöskään tarvitse kestää erityistä höykytystä, koska sitä
+                                                pidetään pöydällä paikallaan, joten sekään ei ole este
+                                                kondensaattorimikrofonin käytölle. Suuntakuvion on ehdottomasti oltava
+                                                pallo
+                                                sillä muussa tapauksessa kaikkien pöydän ympärillä istuvien ääniä ei
+                                                saada
+                                                tehokkaasti välitettyä Kiinaan. Tähän tarkoitukseen sopiva mikrofoni
+                                                olisi
+                                                esimerkiksi <a
+                                                        href="https://www.jimms.fi/fi/Product/Show/155403/988-000213/blue-yeti-pro-usb-xlr-poytamikrofoni-musta-hopea">Blue
+                                                    Yeti Pro, USB/XLR -pöytämikrofoni</a>, hinta 299,90€.
+                                                Kyseisestä mikrofonista löytyy neljä erilaista suuntakuviota, joita voi
+                                                vaihdella käyttötarkoituksen mukaan. Tässä tapauksessa tarvittava
+                                                pallokuvio
+                                                on yksi noista vaihdettavista suuntokuvioista.</p>
+
+                                        </article>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="" data-toggle="modal" data-target="#Modal13"><img src="https://via.placeholder.com/400x225"
-                                                                               class="card-img-top" alt="..."></a>
+                <div class="card last">
+                    <div class="card-img-wrap"><a
+                            href="http://users.metropolia.fi/~tommiov/Digimedia1/digiMedia1/wp_harjoitus"><img
+                            src="images/Wordpress.jpg"
+                            class="card-img-top" alt="..."></a></div>
                     <div class="card-body">
                         <h2 class="card-title text-center">Wordpress-tehtävä</h2>
-                        <div class="modal fade" id="Modal13" tabindex="-1" aria-labelledby="exampleModalLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel13">Wordpress-tehtävä</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                </div>
+                <div class="card hidden last">
+
                 </div>
             </div>
             <br>
-        </section>
-    </main>
-
+        </article>
+    </section>
+    <footer class="page-footer">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            Tommi Vainio
+        </div>
+    </footer>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -414,5 +437,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>

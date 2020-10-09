@@ -1,0 +1,148 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+  font-family: 'Roboto', sans-serif!important;
+}
+
+h1, h2, h3{
+  font-family: 'Heebo', sans-serif!important;
+  font-weight: 600!important;
+}
+
+#Toni, #Ile{
+  font-size: 3rem;
+}
+
+.exercises{
+  margin-top: 4rem;
+}
+
+.bg-light{
+  background-color: #9c75ff!important;
+}
+
+.nav-link{
+  color: #ffffff!important;
+}
+
+.jumbotron-fluid{
+  margin-top: 4.05rem;
+}
+
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-body{
+  background-color: #9c75ff;
+  color: #ffffff;
+}
+
+.last{
+  margin: 1.5rem 0 0.2rem 0;
+}
+
+.modal-content{
+  color: #212529;
+}
+
+#info{
+  background-color: red;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#info p{
+  margin-bottom: 0;
+}
+
+.navbar-collapse{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.navbar-brand{
+  font-family: 'Sansita Swashed', cursive!important;
+  font-size: 1.39rem;
+  font-weight: bold;
+  color: #9c75ff!important;
+  background-color: #ffffff;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown-item{
+  color: #9c75ff;
+  font-weight: 600;
+}
+
+.dropdown-item:active{
+  background-color: #9c75ff;
+}
+
+.hidden{
+  border: none;
+}
+
+.card-img-wrap{
+  overflow: hidden;
+}
+
+.card-img-wrap img{
+  transition: 0.5s all ease-in-out;
+}
+
+.card-img-wrap img:hover{
+  transform: scale(1.1);
+}
+
+.modal-footer{
+  background-color: #9c75ff;
+}
+
+.modal-footer .btn{
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.modal-footer .btn:hover{
+  color: #9c75ff;
+  background-color: #ffffff;
+}
+
+.modal-footer .btn:active{
+  background-color: #9c75ff!important;
+  border-color: #9c75ff!important;
+  color: #ffffff!important;
+  outline-color: #ffffff!important;
+}
+
+.modal-header{
+  background-color: #9c75ff;
+  color: #ffffff;
+}
+
+.close{
+  color: #ffffff;
+}
+
+.modal-content{
+  border: none;
+}
+
+.card-title{
+  margin-bottom: 0;
+}
+
+.footer-copyright{
+  background-color: #9c75ff;
+  color: #ffffff;
+}

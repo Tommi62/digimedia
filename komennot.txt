@@ -1,6 +1,6 @@
 git init
 git add .
 git commit -m jotain
-git remote add origin https://github.com/Tommgiti62/digimedia.gitgitgitgit
+git remote add origin https://github.com/Tommgit62/digimedia.gitgitgitgit
 git push -u origin master
 - jatkossa git push riittää
